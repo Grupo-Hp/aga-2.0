@@ -1,8 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Page from '../components/Page'
 
 export default function Home() {
+
   return (
-    <h1 className='text-red-500'>Agá empreendimentos</h1>
+    <Page title="AGÁ Empreendimentos" description="Site AGÁ Empreendimentos" path="/">
+    </Page>
   )
 }
