@@ -12,8 +12,8 @@ export default function Nav() {
                             <div className="flex justify-center items-center flex-shrink-0 ">
                                 <a href="./"><Image
                                     src="/images/logoAga.svg"
-                                    width={90}
-                                    height={90}
+                                    width={120}
+                                    height={120}
                                     alt="Logo da AGÁ EMPREENDIMENTOS"
 
                                 /></a>
