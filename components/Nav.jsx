@@ -10,8 +10,8 @@ export default function Nav() {
             <div className="shadow-sm py-7 w-full bg-primary-10 border-b z-50">
                 <div className="w-full container mx-auto">
                     <div className="flex items-center h-20 w-full">
-                        <div className="flex items-center  mx-20  justify-between w-full">
-                            <div className="flex justify-center items-center flex-shrink-0 mt-24">
+                        <div className="flex items-center mx-20 justify-between w-full">
+                            <div className="flex mt-24">
                                 <a href="./"><Image
                                     src="/images/logoAga.svg"
                                     width={150}
@@ -20,7 +20,7 @@ export default function Nav() {
 
                                 /></a>
                             </div>
-                            <div className="hidden lg:block">
+                            <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-10 uppercase">
                                     <Link
 
@@ -55,11 +55,11 @@ export default function Nav() {
                                 </div>
                             </div>
                         </div>
-                        <div className="mr-10 flex lg:hidden ">
+                        <div className="mr-10 flex md:hidden ">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 type="button"
-                                className="inline-flex items-center justify-center p-2 rounded-md text-primary-10 focus:ring-offset-2"
+                                className="inline-flex items-center justify-center p-2 rounded-md text-white focus:ring-offset-2"
                                 aria-controls="mobile-menu"
                                 aria-expanded="false"
                             >
@@ -112,7 +112,7 @@ export default function Nav() {
                     leaveTo="opacity-0 scale-95"
                 >
                     {(ref) => (
-                        <div className="lg:hidden uppercase" id="mobile-menu">
+                        <div className="md:hidden uppercase" id="mobile-menu">
                             <div
                                 ref={ref}
                                 className="bg-primary-10 pt-2 pb-3 space-y-1"
