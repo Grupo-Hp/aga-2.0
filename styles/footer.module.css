@@ -39,3 +39,8 @@
 .footer button {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.contato {
+    background-image: url(../public/images/contato.png);
+    background-size: cover;
+}
