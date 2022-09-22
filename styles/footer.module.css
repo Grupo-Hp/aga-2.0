@@ -1,4 +1,3 @@
-
 .footer {
     font-family: 'IBM Plex Serif', serif;
 }
@@ -43,4 +42,23 @@
 .contato {
     background-image: url(../public/images/contato.png);
     background-size: cover;
+}
+
+.quemSomos {
+    background-image: url(../public/images/quemSomosF.png);
+    background-size: cover;
+}
+
+.mvv {
+    background-image: url(../public/images/mvv.png);
+    background-size: cover;
+}
+
+.mvv h3 {
+    color: #0F1A2E;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
