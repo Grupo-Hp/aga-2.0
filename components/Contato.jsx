@@ -41,7 +41,7 @@ export default function Contato() {
                 <div>
                     <div className="grid grid-cols-2 gap-10 mt-4">
                         <div className="col-span-2 xl:col-span-1">
-                            <h4 className='text-3xl text-primary-10 pb-3'>Fale conosco</h4>
+                            <h4 className='text-3xl text-primary-10 pb-3 xl:hidden'>Fale conosco</h4>
                             <p className='text-xl xl:max-w-lg'>Estamos dispostos a sanar quaisquer dúvidas que possam surgir. Caso queira falar conosco, basta preencher o formulário ao lado.</p>
                             <div className='xl:flex xl:flex-col hidden'>
                                 <div className='py-7 border-y-2 my-7 list-none'>
