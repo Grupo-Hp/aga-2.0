@@ -2,6 +2,7 @@ import Page from '../components/Page'
 import PoliticaComponents from '../components/PoliticaComponets'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
+import ItaipuMall from '../components/ItaipuMall'
 import Arua from '../components/Arua'
 import QuemSomos from '../components/QuemSomos'
 import MVV from '../components/MVV'
@@ -15,6 +16,7 @@ export default function Home() {
       <PoliticaComponents />
       <Nav />
       <Header />
+      <ItaipuMall />
       <Arua />
       <QuemSomos />
       <MVV />
