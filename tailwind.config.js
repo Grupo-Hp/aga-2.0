@@ -19,7 +19,8 @@ module.exports = {
         gray: {
           10: '#D6D8DF',
           20: '#DEE8F9',
-        }
+        },
+        arua: '#DEE8F9'
       },
     },
   },

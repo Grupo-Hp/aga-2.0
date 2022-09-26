@@ -54,7 +54,21 @@
     background-size: cover;
 }
 
-.mvv h3 {
+.aruaImage {
+    background-image: url(../public/images/arua.png);
+    background-size: cover;
+    min-height: 700px;
+}
+
+.mvv,
+.arua {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.mvv h3,
+.arua h3 {
     color: #0F1A2E;
     text-transform: uppercase;
     font-size: 30px;
