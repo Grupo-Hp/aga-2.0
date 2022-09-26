@@ -4,11 +4,15 @@ import styles from '../styles/footer.module.css'
 export default function Arua() {
     return (
         <div className="grid grid-cols-2 bg-arua">
-            <div className={`col-span-1 ${styles.aruaImage}`}>
+            <div className={`lg:col-span-1 col-span-2 order-1 ${styles.footer}`}>
+                <h2 className='text-3xl p-10 uppercase lg:hidden'>novo empreendimento em charitas</h2>
+                <div className={`${styles.aruaImage}`}></div>
             </div>
-            <div className="col-span-1">
-                <div className={`p-10 bg-white text-3xl ${styles.footer}`}><h2 className='uppercase'>novo empreendimento em charitas</h2></div>
-                <div className='p-10 w-3/5 text-2xl text-justify font-light'>
+            <div className="lg:col-span-1 col-span-2 order-2">
+                <div className={`p-10 bg-white hidden lg:flex ${styles.footer}`}>
+                    <h2 className='text-3xl uppercase'>novo empreendimento em charitas</h2>
+                </div>
+                <div className='p-10 2xl:w-3/5 text-2xl text-justify font-light'>
                     <p>
                         Um novo conceito arquitetônico próximo a uma das praias mais belas de Niterói. Nosso projeto estará localizado na Região de São Francisco, em Charitas.
                     </p>
