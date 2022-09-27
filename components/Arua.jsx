@@ -11,11 +11,11 @@ export default function Arua() {
             </div>
             <div className="lg:col-span-1 col-span-2 order-2">
                 <div className={`p-10 bg-white hidden lg:flex ${styles.footer}`}>
-                    <h2 className='text-3xl uppercase'>novo empreendimento em charitas</h2>
+                    <h2 className='text-3xl uppercase'>novo empreendimento em niterói</h2>
                 </div>
                 <div className='p-10 2xl:w-3/5 text-2xl text-justify font-light'>
                     <p>
-                        Um novo conceito arquitetônico próximo a uma das praias mais belas de Niterói. Nosso projeto estará localizado na Região de São Francisco, em Charitas.
+                        Um novo conceito arquitetônico próximo em uma das regiões mais belas de Niterói. Nosso projeto estará localizado na Região de Charitas, Niterói.
                     </p>
                     <p className='py-5'>
                         O empreendimento terá em seu entorno restaurantes, casas de festas, praças e outros diversos pontos importantes do bairro. Em breve, mais informações sobre este empreendimento.
