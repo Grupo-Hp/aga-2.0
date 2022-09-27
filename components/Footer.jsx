@@ -12,7 +12,14 @@ export default function Footer() {
                 <div className='container mx-auto'>
                     <div className="w-11/12 mx-auto grid grid-cols-4">
                         <div className='text-center py-32 col-span-4 lg:col-span-2'>
-                            <a href="./"><Image src="/images/logoAga.svg" width="180" height="180" alt="Logo AGÁ Empreendimentos" /></a>
+                            <Link
+                                to="home"
+                                smooth={true}
+                                offset={50}
+                                duration={1000}
+                            >
+                                <Image src="/images/logoAga.svg" width="180" height="180" alt="Logo AGÁ Empreendimentos" />
+                            </Link>
                         </div>
                         <div className={`col-span-2 lg:col-span-1 pb-10 my-auto ${styles.decoration}`}>
                             <h3>menu</h3>

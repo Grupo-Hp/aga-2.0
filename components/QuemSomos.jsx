@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function QuemSomos() {
     return (
         <div className={`${styles.quemSomos}`}>
-            <div className='w-8/12 mx-auto py-10'>
+            <div className='w-8/12 mx-auto py-10' id='quemSomos'>
                 <div className={`grid lg:grid-cols-2 gap-10`}>
                     <div className='flex items-center'>
                         <div className="col-span-2 lg:col-span-1 md:text-xl font-light leading-8 text-justify">

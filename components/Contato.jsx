@@ -36,7 +36,7 @@ export default function Contato() {
     }
 
     return (
-        <div className={`${styles.footer} ${styles.contato}`}>
+        <div className={`${styles.footer} ${styles.contato}`} id='contato'>
             <div className="container mx-auto px-12 py-12 w-8/12">
                 <div>
                     <div className="grid grid-cols-2 gap-10 mt-4">

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from '../styles/footer.module.css'
+import { Link } from "react-scroll";
 
 export default function Arua() {
     return (
@@ -22,8 +23,12 @@ export default function Arua() {
                     <p>
                         Cadastre seu e-mail e receba todas as notificações.
                     </p>
-                    <button type="" className="mt-5 w-full px-6 py-2.5 text-primary-10 font-light text-2xs leading-tight uppercase border border-primary-20 hover:bg-primary-10 hover:text-white transition duration-300 ease-in-out">quero receber notificações</button>
-
+                    <Link to="contato"
+                        smooth={true}
+                        offset={50}
+                        duration={1000}>
+                        <button type="contato" className="mt-5 w-full px-6 py-2.5 text-primary-10 font-light text-2xs leading-tight uppercase border-2 border-primary-20 hover:bg-primary-10 hover:text-white transition duration-300 ease-in-out">quero receber notificações</button>
+                    </Link>
                 </div>
             </div>
         </div>
