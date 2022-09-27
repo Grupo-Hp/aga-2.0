@@ -7,7 +7,7 @@ export default function QuemSomos() {
             <div className='w-8/12 mx-auto py-10' id='quemSomos'>
                 <div className={`grid lg:grid-cols-2 gap-10`}>
                     <div className='flex items-center'>
-                        <div className="col-span-2 lg:col-span-1 md:text-xl font-light leading-8 text-justify">
+                        <div className="col-span-2 lg:col-span-1 md:text-xl 2xl:text-2xl text-justify font-light py-5 leading-10">
                             <h2 className={`text-secondary-10 uppercase text-3xl mb-3 font-semibold ${styles.footer}`}>quem somos</h2>
                             <p className="mb-5 order-1">
                                 Somos a Agá Empreendimentos, referencial para quem busca refinamento e requinte arquitetônico. Estamos localizados em Icaraí, uma das áreas mais importantes da cidade de Niterói. Atuamos com Projetos, Reformas, Construção e Incorporação Imobiliária, tendo amplo destaque no cenário Fluminense.

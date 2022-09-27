@@ -9,8 +9,8 @@ export default function Footer() {
     return (
         <>
             <footer className={`text-white ${styles.footer} bg-primary-10`}>
-                <div className='container mx-auto'>
-                    <div className="w-11/12 mx-auto grid grid-cols-4">
+                <div className='w-11/12 mx-auto'>
+                    <div className="grid grid-cols-4">
                         <div className='text-center py-32 col-span-4 lg:col-span-2'>
                             <Link
                                 to="home"
