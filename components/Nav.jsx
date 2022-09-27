@@ -125,7 +125,7 @@ export default function Nav() {
                                     duration={1000}
                                     className=" cursor-pointer hover:bg-secondary-10 text-white block px-3 py-2 text-base font-medium"
                                 >
-                                    Portfólio
+                                    portfólio
                                 </Link>
                                 <Link
 

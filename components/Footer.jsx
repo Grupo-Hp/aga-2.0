@@ -70,7 +70,7 @@ export default function Footer() {
                                     smooth={true}
                                     offset={50}
                                     duration={1000}
-                                    className={`cursor-pointer`}
+                                    className={`cursor-pointer hidden sm:flex`}
                                 ><li><GoMail className={`text-secondary-10 text-2xl`} />&ensp;contato@agaempreendimentos.com</li></Link>
                                 <li><BiMap className={`text-secondary-10 text-4xl`} />&ensp;Rua Miguel de Frias, 77 - Sala 1601, Niterói/RJ</li>
                             </ul>
