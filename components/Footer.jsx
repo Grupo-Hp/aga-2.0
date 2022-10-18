@@ -9,19 +9,19 @@ export default function Footer() {
     return (
         <>
             <footer className={`text-white ${styles.footer} bg-primary-10`}>
-                <div className='w-11/12 mx-auto'>
+                <div className='w-11/12 mx-auto py-20'>
                     <div className="grid grid-cols-4">
-                        <div className='text-center py-32 col-span-4 lg:col-span-2'>
+                        <div className='text-center col-span-4 lg:col-span-1'>
                             <Link
                                 to="home"
                                 smooth={true}
                                 offset={50}
                                 duration={1000}
                             >
-                                <Image src="/images/logoAga.svg" width="180" height="180" alt="Logo AGÁ Empreendimentos" />
+                                <Image className='cursor-pointer' src="/images/logoAga.svg" width="180" height="180" alt="Logo AGÁ Empreendimentos" />
                             </Link>
                         </div>
-                        <div className={`col-span-2 lg:col-span-1 pb-10 my-auto ${styles.decoration}`}>
+                        <div className={`col-span-2 lg:col-span-1 pb-10 ${styles.decoration}`}>
                             <h3>menu</h3>
                             <ul>
                                 <li><Link
@@ -61,7 +61,18 @@ export default function Footer() {
                                 </a></li>
                             </ul>
                         </div>
-                        <div className="col-span-2 lg:col-span-1 pb-10 my-auto">
+                        <div className={`col-span-2 lg:col-span-1 pb-10 ${styles.decoration}`}>
+                            <h3>grupo hp</h3>
+                            <ul>
+                                <li><a href='https://www.hpbank.com.br/' target='bland'>
+                                    HP Bank
+                                </a></li>
+                                <li><a href='https://www.hpcap.com.br/' target='bland'>
+                                    HP Capital
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div className="col-span-2 lg:col-span-1 pb-10">
                             <h3>contato</h3>
                             <ul>
                                 <li><FiPhone className={`text-secondary-10 text-2xl`} />&ensp;(21)4040-4148</li>
