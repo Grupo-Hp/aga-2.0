@@ -10,6 +10,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 
 export default function Contato() {
 
+    const [loading, setLoading] = useState(false)
+
     const [dataForm, setDataForm] = useState({
         empresa: 'AGÁ Empreendimentos',
         imagem: 'Aga',
@@ -21,19 +23,54 @@ export default function Contato() {
         mensagem: ''
     })
 
+    const [response, setResponse] = useState({
+        type: '',
+        mensagem: ''
+    })
+
+
     const onChangeInput = e => setDataForm({ ...dataForm, [e.target.name]: e.target.value })
 
-    const sendContact = async e => {
+    const sendContact = async () => {
+
+        setLoading(true)
 
         try {
-            await fetch('https://api.grupohp.com.br/send', {
+            const res = await fetch('https://api.grupohp.com.br/send', {
                 method: 'POST',
                 body: JSON.stringify(dataForm),
                 headers: { 'Content-Type': 'application/json' }
             })
+
+            const responseEnv = await res.json();
+
+            // if (responseEnv.erro) {
+            //     setResponse({
+            //         type: 'error',
+            //         mensagem: responseEnv.mensagem
+            //     });
+            // } else {
+            //     setResponse({
+            //         type: 'success',
+            //         mensagem: responseEnv.mensagem
+            //     });
+
+            //     setDataForm({
+            //         nome: '',
+            //         email: '',
+            //         telefone: '',
+            //         assunto: '',
+            //         mensagem: ''
+            //     })
+            // }
             alert('Dados enviado com sucesso!')
+            setLoading(false)
+
         } catch (error) {
-            alert('Ocorreu um erro')
+            setResponse({
+                type: 'error',
+                mensagem: "Ocorreu um erro. Tente mais tarde"
+            });
         }
     }
 
@@ -98,6 +135,8 @@ export default function Contato() {
 
                         <div className="col-span-2 xl:col-span-1">
                             <h4 className='text-3xl text-primary-10 pb-3 hidden xl:flex '>Fale conosco</h4>
+                            {response.type === 'error' ? <p className="alert-danger">{response.mensagem}</p> : ""}
+                            {response.type === 'success' ? <p className="p-5 bg-red-400 text-red-800">{response.mensagem}</p> : ""}
                             <form onSubmit={handleSubmit(sendContact)}>
 
                                 <div className="form-group mb-6">
@@ -127,7 +166,7 @@ export default function Contato() {
                                         <div className="flex">
                                             <div className="mb-3 w-full">
                                                 <select className="form-select block w-full px-3 py-1.5 text-base text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary-20 focus:outline-none" aria-label="Default select example" {...register('assunto')} value={dataForm.assunto} onChange={onChangeInput}>
-                                                    <option defaultValue disabled>Escolhe o tipo de assunto:</option>
+                                                    <option defaultValue>Escolhe o tipo de assunto:</option>
                                                     <option value="Comercial">Comercial</option>
                                                     <option value="Elogio">Elogio</option>
                                                     <option value="Reclamações">Reclamações</option>
@@ -144,8 +183,8 @@ export default function Contato() {
 
                                     <textarea className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary-20 focus:outline-none" {...register('mensagem')} rows="7" onChange={onChangeInput} value={dataForm.mensagem} placeholder="Escreva aqui..." ></textarea>
                                     <p className="text-red-500 ml-3 mt-1">{errors?.mensagem?.message}</p>
-                                    <button type="submit" className="mt-2 w-full px-6 py-2.5 text-primary-10 font-medium text-xs leading-tight uppercase border border-primary-20 hover:bg-primary-10 hover:text-white transition duration-300 ease-in-out">Enviar</button>
-
+                                    {loading && <button type="submit" className="mt-2 w-full px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase border border-gray-400 bg-gray-400 ease-in-out">Aguarde</button>}
+                                    {!loading && <button type="submit" className="mt-2 w-full px-6 py-2.5 text-primary-10 font-medium text-xs leading-tight uppercase border border-primary-20 hover:bg-primary-10 hover:text-white transition duration-300 ease-in-out">Enviar</button>}
                                 </div>
                             </form>
                             <div className='grid grid-cols-2 gap-x-24 xl:hidden mt-10 pt-10 border-t-2'>
