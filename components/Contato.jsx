@@ -54,15 +54,14 @@ export default function Contato() {
             //         type: 'success',
             //         mensagem: responseEnv.mensagem
             //     });
-
-            //     setDataForm({
-            //         nome: '',
-            //         email: '',
-            //         telefone: '',
-            //         assunto: '',
-            //         mensagem: ''
-            //     })
             // }
+            setDataForm({
+                nome: '',
+                email: '',
+                telefone: '',
+                assunto: '',
+                mensagem: ''
+            })
             setLoading(false)
             alert('Dados enviado com sucesso!')
 
