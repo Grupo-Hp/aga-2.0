@@ -42,7 +42,7 @@ export default function Contato() {
                 headers: { 'Content-Type': 'application/json' }
             })
 
-            const responseEnv = await res.json();
+            //const responseEnv = await res.json();
 
             // if (responseEnv.erro) {
             //     setResponse({
@@ -63,14 +63,15 @@ export default function Contato() {
             //         mensagem: ''
             //     })
             // }
-            alert('Dados enviado com sucesso!')
             setLoading(false)
+            alert('Dados enviado com sucesso!')
 
         } catch (error) {
-            setResponse({
-                type: 'error',
-                mensagem: "Ocorreu um erro. Tente mais tarde"
-            });
+            alert('Ocorreu um erro')
+            // setResponse({
+            //     type: 'error',
+            //     mensagem: "Ocorreu um erro. Tente mais tarde"
+            // });
         }
     }
 
@@ -135,8 +136,8 @@ export default function Contato() {
 
                         <div className="col-span-2 xl:col-span-1">
                             <h4 className='text-3xl text-primary-10 pb-3 hidden xl:flex '>Fale conosco</h4>
-                            {response.type === 'error' ? <p className="alert-danger">{response.mensagem}</p> : ""}
-                            {response.type === 'success' ? <p className="p-5 bg-red-400 text-red-800">{response.mensagem}</p> : ""}
+                            {/* {response.type === 'error' ? <p className="alert-danger">{response.mensagem}</p> : ""}
+                            {response.type === 'success' ? <p className="p-5 bg-red-400 text-red-800">{response.mensagem}</p> : ""} */}
                             <form onSubmit={handleSubmit(sendContact)}>
 
                                 <div className="form-group mb-6">
