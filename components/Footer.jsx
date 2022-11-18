@@ -83,7 +83,7 @@ export default function Footer() {
                                     duration={1000}
                                     className={`cursor-pointer hidden sm:flex`}
                                 ><li><GoMail className={`text-secondary-10 text-2xl`} />&ensp;contato@agaempreendimentos.com</li></Link>
-                                <li><BiMap className={`text-secondary-10 text-3xl`} />&ensp;Rua Miguel de Frias, 77 - Sala 1601, Niterói/RJ</li>
+                                <li><BiMap className={`text-secondary-10 text-3xl`} />Av. Pref. Silvio Picanço, 463 - Sala 708/711, Niterói/RJ</li>
                             </ul>
                         </div>
                     </div>
