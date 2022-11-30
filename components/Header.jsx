@@ -10,7 +10,7 @@ export default function Header() {
                         <Image src="/images/AGA_site_12.png" width="576" height="505" alt="Imagem ilustrativa" />
                     </div>
                     <div className="col-span-2 lg:col-span-1 flex items-center order-1 md:order-2">
-                        <h1 className='text-white text-5xl sm:text-6xl font-light max-w-sm text-center lg:text-left'>REQUINTE E SOFISTICAÇÃO EM FORMA DE TRAÇOS</h1>
+                        <h1 className='text-white text-4xl sm:text-6xl font-light max-w-sm text-center lg:text-left'>REQUINTE E SOFISTICAÇÃO EM FORMA DE TRAÇOS</h1>
                     </div>
                 </div>
             </div>
