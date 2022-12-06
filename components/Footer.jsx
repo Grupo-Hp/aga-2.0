@@ -75,7 +75,7 @@ export default function Footer() {
                         <div className="col-span-2 lg:col-span-1 pb-10">
                             <h3>contato</h3>
                             <ul>
-                                <li><FiPhone className={`text-secondary-10 text-2xl`} />&ensp;(21)4040-4148</li>
+                                <li><FiPhone className={`text-secondary-10 text-2xl`} />&ensp;(21)4042-1845</li>
                                 <Link
                                     to="contato"
                                     smooth={true}
