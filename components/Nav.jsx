@@ -34,6 +34,16 @@ export default function Nav() {
                                     </Link>
                                     <Link
 
+                                        to="portfolio"
+                                        smooth={true}
+                                        offset={50}
+                                        duration={1000}
+                                        className=' font-medium hover:text-secondary-10 cursor-pointer text-white'
+                                    >
+                                        private equity
+                                    </Link>
+                                    <Link
+
                                         to="quemSomos"
                                         smooth={true}
                                         offset={50}
