@@ -34,7 +34,7 @@ export default function Nav() {
                                     </Link>
                                     <Link
 
-                                        to="portfolio"
+                                        to="private"
                                         smooth={true}
                                         offset={50}
                                         duration={1000}

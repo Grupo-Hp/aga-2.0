@@ -5,9 +5,9 @@ import { Link } from "react-scroll";
 
 export default function ItaipuMall() {
     return (
-        <div className={`${styles.quemSomos}`}>
+        <div className={`${styles.quemSomos}`} id='private'>
             <div className="grid grid-cols-2">
-                <div className="hidden xl:block col-span-1" id='portfolio'>
+                <div className="hidden xl:block col-span-1">
                     <Image src="/images/itaipu1.png" layout='responsive' width={100} height={100} alt="Imagem ilustrativa" />
                 </div>
                 <div className="col-span-2 xl:col-span-1 w-3/4 xl:w-3/4 2xl:w-2/4 m-auto py-10">
