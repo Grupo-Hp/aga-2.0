@@ -76,3 +76,9 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.teste {
+    background-image: url(../public/images/testePrivate.jpeg);
+    background-size: cover;
+    background-position: right;
+}

@@ -5,7 +5,11 @@ import { FiPhone } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 import { BiMap } from "react-icons/bi";
 
+
 export default function Footer() {
+
+const ano = new Date().getFullYear()
+
     return (
         <>
             <footer className={`text-white ${styles.footer} bg-primary-10`}>
@@ -89,7 +93,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='pb-3 text-center'>
-                    <span>TODOS OS DIREITOS RESERVADOS – AGÁ EMPREENDIMENTOS&copy; 2022</span>
+                    <span>TODOS OS DIREITOS RESERVADOS – AGÁ EMPREENDIMENTOS &copy;{ano}</span>
                 </div>
             </footer>
         </>
