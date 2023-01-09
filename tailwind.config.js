@@ -24,12 +24,12 @@ module.exports = {
       },
 
       backgroundImage: {
-        'private-equity': "url('/images/privateEquity.jpeg')",
-        'itaipuMall': "url('/images/itaipu1.png')",
-        'quemSomos': "url('/images/quemSomosF.png')",
-        'contato': "url('/images/contato.png')",
-        'mvv': "url('/images/mvv.png')",
         'header': "url('/images/header.png')",
+        'itaipuMall': "url('/images/itaipu1.png')",
+        'private-equity': "url('/images/privateEquity.jpeg')",
+        'quemSomos': "url('/images/quemSomosF.png')",
+        'mvv': "url('/images/mvv.png')",
+        'contato': "url('/images/contato.png')",
       }
 
     },
