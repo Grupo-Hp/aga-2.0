@@ -22,6 +22,16 @@ module.exports = {
         },
         arua: '#DEE8F9'
       },
+
+      backgroundImage: {
+        'private-equity': "url('/images/privateEquity.jpeg')",
+        'itaipuMall': "url('/images/itaipu1.png')",
+        'quemSomos': "url('/images/quemSomosF.png')",
+        'contato': "url('/images/contato.png')",
+        'mvv': "url('/images/mvv.png')",
+        'header': "url('/images/header.png')",
+      }
+
     },
   },
   plugins: [],

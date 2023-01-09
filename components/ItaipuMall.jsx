@@ -22,9 +22,7 @@ export default function ItaipuMall() {
                         <button type="" className="mt-24 w-full px-6 py-2.5 text-secondary-20 font-light text-2xs leading-tight uppercase border-2 border-secondary-20 hover:bg-secondary-20 hover:text-white transition duration-300 ease-in-out">descubra mais sobre esse empreendimento</button>
                     </Link>
                 </div>
-                <div className="hidden xl:block col-span-1" id='portfolio'>
-                    <Image src="/images/itaipu1.png" layout='responsive' width={100} height={100} alt="Imagem ilustrativa" />
-                </div>
+                <div className="hidden xl:block col-span-1 bg-itaipuMall bg-cover" id='portfolio'></div>
             </div>
             {/* <div className="grid grid-cols-2 gap-10 w-4/5 mx-auto py-16">
                 <div className="col-span-2 xl:col-span-1">

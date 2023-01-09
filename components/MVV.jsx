@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function MVV() {
     return (
-        <div className={`${styles.mvv}`}>
+        <div className={`${styles.mvv} bg-mvv bg-cover`}>
 
             <div className="w-7/12 mx-auto hidden xl:grid grid-cols-3 gap-x-14 my-14">
                 <div className="col-span-3 lg:col-span-1">

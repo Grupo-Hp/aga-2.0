@@ -107,7 +107,7 @@ export default function Contato() {
     });
 
     return (
-        <div className={`${styles.footer} ${styles.contato}`} id='contato'>
+        <div className={`${styles.footer} bg-contato bg-cover`} id='contato'>
             <div className="container mx-auto px-12 py-12 md:w-10/12">
                 <div>
                     <div className="grid grid-cols-2 gap-10 mt-4">
