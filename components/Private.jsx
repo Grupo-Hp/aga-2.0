@@ -13,16 +13,16 @@ export default function ItaipuMall() {
                 <div className="col-span-2 xl:col-span-1 w-3/4 xl:w-3/4 2xl:w-2/4 m-auto py-10">
                     <h2 className={`text-primary-10 uppercase text-3xl mb-10 font-semibold ${styles.footer}`}>private equity</h2>
                     <p className='text-2xl text-justify font-light leading-10'>
-                        Requinte e luxo transformados em arquitetura. Localizado em uma das áreas mais nobres de Niterói, o novo projeto da Agá Empreendimentos, o ITAIPU MALL, abre espaço para as maiores e mais importantes lojas do Brasil.
+                        Private Equity é uma modalidade de investimento na qual um investidor aporta um valor específico, obtendo lucro após a venda do empreendimento. Trata-se de uma aplicação a médio e longo prazo, que garantem retornos superiores diante os modelos de investimento tradicionais.
                     </p>
                     <p className='hidden lg:flex text-2xl text-justify font-light py-5 leading-10'>
-                        Com cerca de 14 mil m², shopping terá mais de 20 estabelecimentos diversificados, dentre os quais: supermercado, academia, farmácia e pet shop. Além de um amplo estacionamento coberto, o ITAIPU MALL também contará com uma confortável praça de alimentação.
+                        Garanta agora sua cota no Condomínio Residencial Aruã e faça parte de um dos maiores investimentos do Rio de Janeiro. Entre em contato agora e descubra como fazer parte deste empreendimento.
                     </p>
                     <Link to="contato"
                         smooth={true}
                         offset={50}
                         duration={1000}>
-                        <button type="" className="mt-24 w-full px-6 py-2.5 text-primary-20 font-light text-2xs leading-tight uppercase border-2 border-primary-20 hover:bg-primary-20 hover:text-white transition duration-300 ease-in-out">saiba mais</button>
+                        <button type="" className="mt-24 w-full px-6 py-2.5 text-primary-20 font-light text-2xs leading-tight uppercase border-2 border-primary-20 hover:bg-primary-20 hover:text-white transition duration-300 ease-in-out">descubra mais sobre private equity</button>
                     </Link>
                 </div>
             </div>
