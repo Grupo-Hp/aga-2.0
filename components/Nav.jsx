@@ -32,7 +32,7 @@ export default function Nav() {
                                     >
                                         Portfólio
                                     </Link>
-                                    <Link
+                                    {/* <Link
 
                                         to="private"
                                         smooth={true}
@@ -41,7 +41,7 @@ export default function Nav() {
                                         className=' font-medium hover:text-secondary-10 cursor-pointer text-white'
                                     >
                                         private equity
-                                    </Link>
+                                    </Link> */}
                                     <Link
 
                                         to="quemSomos"
